@@ -4,7 +4,7 @@ Contains my solutions to the AdventOfCode 2024 puzzles, using Rust.
 
 To know what AdventOfCode is, check the [official website](https://adventofcode.com/).
 
-> These by no means are the best solutions to the puzzles, but they are the ones I came up with. The exercise is meant to learn rust. This repository also contains the test data for my user, which you should change for your user if you're following along. Every exercise has a `testfile`, which is the input data for the exercise, simply modify it.
+> These by no means are the best solutions to the puzzles, but they are the ones I came up with. The exercise is meant to learn rust. This repository also contains the test data for my user, which you should change for your user if you're following along. Every exercise requires a `testfile`, which is the input data for the exercise, simply modify create a file in the exercise directory and add test data to it.
 
 ### Running the solutions
 
