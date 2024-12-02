@@ -3,7 +3,10 @@ mod runner;
 use std::{env, process};
 
 use modrunner::modrunner::{InvalidWorker, ModRunner};
-use runner::{exercise1_1::exercise1_1, exercise1_2::exercise1_2};
+use runner::{
+    exercise1_1::exercise1_1, exercise1_2::exercise1_2, exercise2_1::exercise2_1,
+    exercise2_2::exercise2_2,
+};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -21,6 +24,8 @@ fn main() {
     match exercise_code {
         "1_1" => wrkr = &exercise1_1::Worker {},
         "1_2" => wrkr = &exercise1_2::Worker {},
+        "2_1" => wrkr = &exercise2_1::Worker {},
+        "2_2" => wrkr = &exercise2_2::Worker {},
         _ => {}
     }
     return wrkr.run();
