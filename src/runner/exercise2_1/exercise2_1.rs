@@ -32,10 +32,7 @@ fn parse_input_per_line(fname: &str) -> i16 {
                     data.push(num);
                 });
                 if is_safe(data) {
-                    println!("SAFE");
                     safe_counter += 1;
-                } else {
-                    println!("UNSAFE");
                 }
             }
         }
@@ -45,7 +42,6 @@ fn parse_input_per_line(fname: &str) -> i16 {
 }
 
 fn is_safe(data: Vec<i32>) -> bool {
-    println!("{:?}", data);
     if data.len() == 1 {
         return true;
     }

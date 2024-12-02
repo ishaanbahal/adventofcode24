@@ -1,6 +1,6 @@
 mod modrunner;
 mod runner;
-use std::{env, process};
+use std::{env, process, time::SystemTime};
 
 use modrunner::modrunner::{InvalidWorker, ModRunner};
 use runner::{
@@ -28,5 +28,7 @@ fn main() {
         "2_2" => wrkr = &exercise2_2::Worker {},
         _ => {}
     }
-    return wrkr.run();
+    let now = SystemTime::now();
+    wrkr.run();
+    println!("Time elapsed: {} µs", now.elapsed().unwrap().as_micros());
 }
