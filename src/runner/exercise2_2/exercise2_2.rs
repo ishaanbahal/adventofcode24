@@ -32,12 +32,14 @@ fn parse_input_per_line(fname: &str) -> i16 {
                     data.push(num);
                 });
                 if is_safe(&data) {
+                    println!("{:?} ", data);
                     safe_counter += 1;
                 } else {
                     for index in 0..data.len() {
                         let mut dup = data.clone();
                         dup.remove(index);
                         if is_safe(&dup) {
+                            println!("{:?} ", data);
                             safe_counter += 1;
                             break;
                         }

@@ -5,7 +5,7 @@ use std::{env, process, time::SystemTime};
 use modrunner::modrunner::{InvalidWorker, ModRunner};
 use runner::{
     exercise1_1::exercise1_1, exercise1_2::exercise1_2, exercise2_1::exercise2_1,
-    exercise2_2::exercise2_2,
+    exercise2_2::exercise2_2, exercise3_1::exercise3_1, exercise3_2::exercise3_2,
 };
 
 fn main() {
@@ -26,6 +26,8 @@ fn main() {
         "1_2" => wrkr = &exercise1_2::Worker {},
         "2_1" => wrkr = &exercise2_1::Worker {},
         "2_2" => wrkr = &exercise2_2::Worker {},
+        "3_1" => wrkr = &exercise3_1::Worker {},
+        "3_2" => wrkr = &exercise3_2::Worker {},
         _ => {}
     }
     let now = SystemTime::now();
