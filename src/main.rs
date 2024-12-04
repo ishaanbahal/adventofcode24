@@ -6,6 +6,7 @@ use modrunner::modrunner::{InvalidWorker, ModRunner};
 use runner::{
     exercise1_1::exercise1_1, exercise1_2::exercise1_2, exercise2_1::exercise2_1,
     exercise2_2::exercise2_2, exercise3_1::exercise3_1, exercise3_2::exercise3_2,
+    exercise4_1::exercise4_1, exercise4_2::exercise4_2,
 };
 
 fn main() {
@@ -28,6 +29,8 @@ fn main() {
         "2_2" => wrkr = &exercise2_2::Worker {},
         "3_1" => wrkr = &exercise3_1::Worker {},
         "3_2" => wrkr = &exercise3_2::Worker {},
+        "4_1" => wrkr = &exercise4_1::Worker {},
+        "4_2" => wrkr = &exercise4_2::Worker {},
         _ => {}
     }
     let now = SystemTime::now();
