@@ -115,7 +115,10 @@ fn is_looping(
             if is_exit(x, y, total_rows, total_cols) {
                 return false;
             }
-            if is_same_direction(&matrix[y as usize][x as usize], &direction) && !first_iter {
+            if matrix[y as usize][x as usize] != "."
+                && is_same_direction(&matrix[y as usize][x as usize], &direction)
+                && !first_iter
+            {
                 return true;
             }
             // Checking re-encounter
@@ -145,7 +148,6 @@ fn find_obstacles(matrix: &mut Vec<Vec<String>>, x: i32, y: i32) -> i32 {
     let direction = _get_direction(matrix[y as usize][x as usize].clone());
     let total_rows = matrix.len();
     let total_cols = matrix[0].len();
-    println!("Total rows: {}, total cols: {}", total_rows, total_cols);
     let mut obstacle_counter = 0;
     for i in 0..total_rows {
         for j in 0..total_cols {
@@ -154,7 +156,6 @@ fn find_obstacles(matrix: &mut Vec<Vec<String>>, x: i32, y: i32) -> i32 {
             }
             if is_looping(start_x, start_y, j as i32, i as i32, matrix, &direction) {
                 obstacle_counter += 1;
-                println!("Obstacle at: x: {}, y: {}", j + 1, i + 1);
             }
         }
     }
