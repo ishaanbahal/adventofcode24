@@ -7,7 +7,7 @@ use runner::{
     exercise1_1::exercise1_1, exercise1_2::exercise1_2, exercise2_1::exercise2_1,
     exercise2_2::exercise2_2, exercise3_1::exercise3_1, exercise3_2::exercise3_2,
     exercise4_1::exercise4_1, exercise4_2::exercise4_2, exercise5_1::exercise5_1,
-    exercise5_2::exercise5_2,
+    exercise5_2::exercise5_2, exercise6_1::exercise6_1, exercise6_2::exercise6_2,
 };
 
 fn main() {
@@ -34,6 +34,8 @@ fn main() {
         "4_2" => wrkr = &exercise4_2::Worker {},
         "5_1" => wrkr = &exercise5_1::Worker {},
         "5_2" => wrkr = &exercise5_2::Worker {},
+        "6_1" => wrkr = &exercise6_1::Worker {},
+        "6_2" => wrkr = &exercise6_2::Worker {},
         _ => {}
     }
     let now = SystemTime::now();
