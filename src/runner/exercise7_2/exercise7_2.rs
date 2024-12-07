@@ -38,7 +38,10 @@ fn parse_input(fname: &str) -> i64 {
                 let nums: Vec<i64> = parsed_input
                     .map(|x| x.as_str().parse::<i64>().unwrap())
                     .collect();
-                if check_eq_bfs(total, &nums) {
+                //if check_eq_bfs(total, &nums) {
+                //    correct_total += total;
+                //}
+                if check_eq_dfs(total, &nums, 1, nums[0]) {
                     correct_total += total;
                 }
             }
@@ -52,6 +55,27 @@ fn concat_i64(a: i64, b: i64) -> i64 {
     let digits = (b as f64).log10().ceil() as u32;
     let c = (a * i64::pow(10, digits)) + b;
     return c;
+}
+
+fn check_eq_dfs(total: i64, nums: &Vec<i64>, index: usize, seed: i64) -> bool {
+    if index == nums.len() {
+        return seed == total;
+    }
+    let num = nums[index];
+    let mul = seed * num;
+    let add = seed + num;
+    let cc = concat_i64(seed, num);
+    let next_index = index + 1;
+    if mul <= total && check_eq_dfs(total, &nums, next_index, mul) {
+        return true;
+    }
+    if add <= total && check_eq_dfs(total, &nums, next_index, add) {
+        return true;
+    }
+    if cc <= total && check_eq_dfs(total, &nums, next_index, cc) {
+        return true;
+    }
+    return false;
 }
 
 fn check_eq_bfs(total: i64, nums: &Vec<i64>) -> bool {

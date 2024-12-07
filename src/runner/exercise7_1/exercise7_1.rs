@@ -38,7 +38,10 @@ fn parse_input(fname: &str) -> i64 {
                 let nums: Vec<i64> = parsed_input
                     .map(|x| x.as_str().parse::<i64>().unwrap())
                     .collect();
-                if check_eq_bfs(total, &nums) {
+                //if check_eq_bfs(total, &nums) {
+                //    correct_total += total;
+                //}
+                if check_eq_dfs(total, &nums, 1, nums[0]) {
                     correct_total += total;
                 }
             }
@@ -46,6 +49,23 @@ fn parse_input(fname: &str) -> i64 {
         Err(e) => panic!("Error opening file: {}", e),
     }
     return correct_total;
+}
+
+fn check_eq_dfs(total: i64, nums: &Vec<i64>, index: usize, seed: i64) -> bool {
+    if index == nums.len() {
+        return seed == total;
+    }
+    let num = nums[index];
+    let mul = seed * num;
+    let add = seed + num;
+    let next_index = index + 1;
+    if mul <= total && check_eq_dfs(total, &nums, next_index, mul) {
+        return true;
+    }
+    if add <= total && check_eq_dfs(total, &nums, next_index, add) {
+        return true;
+    }
+    return false;
 }
 
 fn check_eq_bfs(total: i64, nums: &Vec<i64>) -> bool {
