@@ -49,9 +49,9 @@ fn parse_input(fname: &str) -> i64 {
 }
 
 fn concat_i64(a: i64, b: i64) -> i64 {
-    let a: String = a.to_string();
-    let b: String = b.to_string();
-    return (a + &b).parse::<i64>().unwrap();
+    let digits = (b as f64).log10().ceil() as u32;
+    let c = (a * i64::pow(10, digits)) + b;
+    return c;
 }
 
 fn check_eq_bfs(total: i64, nums: &Vec<i64>) -> bool {
