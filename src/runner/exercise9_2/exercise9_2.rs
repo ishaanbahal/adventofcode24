@@ -63,7 +63,6 @@ fn defrag(data: &mut Vec<(i32, i32)>, max_id: i32) -> &Vec<(i32, i32)> {
                     if free_space.1 - t_times > 0 {
                         data.insert(j + 1, (-1, free_space.1 - t_times));
                     }
-                    space_compaction(data);
                     is_swapped = true;
                 }
                 if is_swapped {
