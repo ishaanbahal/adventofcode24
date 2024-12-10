@@ -1,3 +1,5 @@
+pub mod exercise10_1;
+pub mod exercise10_2;
 pub mod exercise1_1;
 pub mod exercise1_2;
 pub mod exercise2_1;

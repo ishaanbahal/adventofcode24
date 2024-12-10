@@ -4,12 +4,13 @@ use std::{env, process, time::SystemTime};
 
 use modrunner::modrunner::{InvalidWorker, ModRunner};
 use runner::{
-    exercise1_1::exercise1_1, exercise1_2::exercise1_2, exercise2_1::exercise2_1,
-    exercise2_2::exercise2_2, exercise3_1::exercise3_1, exercise3_2::exercise3_2,
-    exercise4_1::exercise4_1, exercise4_2::exercise4_2, exercise5_1::exercise5_1,
-    exercise5_2::exercise5_2, exercise6_1::exercise6_1, exercise6_2::exercise6_2,
-    exercise7_1::exercise7_1, exercise7_2::exercise7_2, exercise8_1::exercise8_1,
-    exercise8_2::exercise8_2, exercise9_1::exercise9_1, exercise9_2::exercise9_2,
+    exercise10_1::exercise10_1, exercise10_2::exercise10_2, exercise1_1::exercise1_1,
+    exercise1_2::exercise1_2, exercise2_1::exercise2_1, exercise2_2::exercise2_2,
+    exercise3_1::exercise3_1, exercise3_2::exercise3_2, exercise4_1::exercise4_1,
+    exercise4_2::exercise4_2, exercise5_1::exercise5_1, exercise5_2::exercise5_2,
+    exercise6_1::exercise6_1, exercise6_2::exercise6_2, exercise7_1::exercise7_1,
+    exercise7_2::exercise7_2, exercise8_1::exercise8_1, exercise8_2::exercise8_2,
+    exercise9_1::exercise9_1, exercise9_2::exercise9_2,
 };
 
 fn main() {
@@ -44,6 +45,8 @@ fn main() {
         "8_2" => wrkr = &exercise8_2::Worker {},
         "9_1" => wrkr = &exercise9_1::Worker {},
         "9_2" => wrkr = &exercise9_2::Worker {},
+        "10_1" => wrkr = &exercise10_1::Worker {},
+        "10_2" => wrkr = &exercise10_2::Worker {},
         _ => {}
     }
     let now = SystemTime::now();
