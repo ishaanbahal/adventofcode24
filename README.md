@@ -24,7 +24,7 @@ cargo run 2_1
 ## Solutions
 These are my solutions, with runtimes! :sunglasses:
 
-| Day | Title | 1 :star: | 2 :star: | Part 1 | Part 2 |
+| Day | Title | 1 :running_man: | 2 :running_man: | Part 1 | Part 2 |
 |:-|:-|:-|:-|:-|:-|
 | [01](https://adventofcode.com/2024/day/1)  | Historian Hysteria              | 373µs | 393µs | [Exercise1_1.rs](./src/runner/exercise1_1/exercise1_1.rs) | [Exercise1_2.rs](./src/runner/exercise1_2/exercise1_2.rs) |
 | [02](https://adventofcode.com/2024/day/2)  | Red-Nosed Reports               | 521µs | 1.5ms | [Exercise2_1.rs](./src/runner/exercise2_1/exercise2_1.rs) | [Exercise2_2.rs](./src/runner/exercise2_2/exercise2_2.rs) |
