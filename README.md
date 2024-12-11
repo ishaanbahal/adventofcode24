@@ -20,3 +20,20 @@ To run any other exercise, simply change the argument to the command, for exampl
 ```bash
 cargo run 2_1
 ```
+
+## Solutions
+These are my solutions, with runtimes! :sunglasses:
+
+| Day | Title | 1 :star: | 2 :star: | Part 1 | Part 2 |
+|:-|:-|:-|:-|:-|:-|
+| [01](https://adventofcode.com/2024/day/1)  | Historian Hysteria              | 373µs | 393µs | [Exercise1_1.rs](./src/runner/exercise1_1/exercise1_1.rs) | [Exercise1_2.rs](./src/runner/exercise1_2/exercise1_2.rs) |
+| [02](https://adventofcode.com/2024/day/2)  | Red-Nosed Reports               | 521µs | 1.5ms | [Exercise2_1.rs](./src/runner/exercise2_1/exercise2_1.rs) | [Exercise2_2.rs](./src/runner/exercise2_2/exercise2_2.rs) |
+| [03](https://adventofcode.com/2024/day/3)  | Mull it Over                    | 506µs | 560µs | [Exercise3_1.rs](./src/runner/exercise3_1/exercise3_1.rs) | [Exercise3_2.rs](./src/runner/exercise3_2/exercise3_2.rs) |
+| [04](https://adventofcode.com/2024/day/4)  | Ceres Search                    | 3.7ms | 657µs | [Exercise4_1.rs](./src/runner/exercise4_1/exercise4_1.rs) | [Exercise4_2.rs](./src/runner/exercise4_2/exercise4_2.rs) |
+| [05](https://adventofcode.com/2024/day/5)  | Print Queue                     | 511µs  | 795µs  | [Exercise5_1.rs](./src/runner/exercise5_1/exercise5_1.rs) | [Exercise5_2.rs](./src/runner/exercise5_2/exercise5_2.rs) |
+| [06](https://adventofcode.com/2024/day/6)  | Guard Gallivant                 | 313µs | 740µs | [Exercise6_1.rs](./src/runner/exercise6_1/exercise6_1.rs) | [Exercise6_2.rs](./src/runner/exercise6_2/exercise6_2.rs) |
+| [07](https://adventofcode.com/2024/day/7)  | Bridge Repair                   | 1.80ms | 19.3ms  | [Exercise7_1.rs](./src/runner/exercise7_1/exercise7_1.rs) | [Exercise7_2.rs](./src/runner/exercise7_2/exercise7_2.rs) |
+| [08](https://adventofcode.com/2024/day/8)  | Resonant Collinearity           | 781µs | 996µs  | [Exercise8_1.rs](./src/runner/exercise8_1/exercise8_1.rs) | [Exercise8_2.rs](./src/runner/exercise8_2/exercise8_2.rs) |
+| [09](https://adventofcode.com/2024/day/9)  | Disk Fragmenter                 | 1.73ms | 90.8ms | [Exercise9_1.rs](./src/runner/exercise9_1/exercise9_1.rs) | [Exercise9_2.rs](./src/runner/exercise9_2/exercise9_2.rs) |
+| [10](https://adventofcode.com/2024/day/10) | Hoof It                         | 998µs  | 868µs  | [Exercise10_1.rs](./src/runner/exercise10_1/exercise10_1.rs) | [Exercise10_2.rs](./src/runner/exercise10_2/exercise10_2.rs) |
+| [11](https://adventofcode.com/2024/day/11) | Plutonian Pebbles               | 916µs  | 18.1ms | [Exercise11_1.rs](./src/runner/exercise11_1/exercise11_1.rs) | [Exercise11_2.rs](./src/runner/exercise11_2/exercise11_2.rs) |
