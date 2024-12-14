@@ -38,3 +38,8 @@ These are my solutions, with runtimes! :sunglasses:
 | [10](https://adventofcode.com/2024/day/10) | Hoof It                         | 998µs  | 868µs  | [Exercise10_1.rs](./src/runner/exercise10_1/exercise10_1.rs) | [Exercise10_2.rs](./src/runner/exercise10_2/exercise10_2.rs) |
 | [11](https://adventofcode.com/2024/day/11) | Plutonian Pebbles               | 916µs  | 18.1ms | [Exercise11_1.rs](./src/runner/exercise11_1/exercise11_1.rs) | [Exercise11_2.rs](./src/runner/exercise11_2/exercise11_2.rs) |
 | [12](https://adventofcode.com/2024/day/12) | Garden Groups               | 6.08ms  | NA | [Exercise12_1.rs](./src/runner/exercise12_1/exercise12_1.rs) | [Exercise12_2.rs](./src/runner/exercise12_2/exercise12_2.rs) |
+| [13](https://adventofcode.com/2024/day/13) | Claw Contraption               | 60µs  | 62µs | [Exercise13_1.rs](./src/runner/exercise13_1/exercise14_1.rs) | [Exercise13_2.rs](./src/runner/exercise13_2/exercise13_2.rs) |
+
+
+## Notes
+1. Day 13, linear equation solving, though unsure why the results are in floating points when done on paper, when for sample case the integer values satify the equation. Need to read up on this.
