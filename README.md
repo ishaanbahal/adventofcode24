@@ -37,3 +37,4 @@ These are my solutions, with runtimes! :sunglasses:
 | [09](https://adventofcode.com/2024/day/9)  | Disk Fragmenter                 | 1.73ms | 90.8ms | [Exercise9_1.rs](./src/runner/exercise9_1/exercise9_1.rs) | [Exercise9_2.rs](./src/runner/exercise9_2/exercise9_2.rs) |
 | [10](https://adventofcode.com/2024/day/10) | Hoof It                         | 998µs  | 868µs  | [Exercise10_1.rs](./src/runner/exercise10_1/exercise10_1.rs) | [Exercise10_2.rs](./src/runner/exercise10_2/exercise10_2.rs) |
 | [11](https://adventofcode.com/2024/day/11) | Plutonian Pebbles               | 916µs  | 18.1ms | [Exercise11_1.rs](./src/runner/exercise11_1/exercise11_1.rs) | [Exercise11_2.rs](./src/runner/exercise11_2/exercise11_2.rs) |
+| [12](https://adventofcode.com/2024/day/12) | Garden Groups               | 6.08ms  | NA | [Exercise12_1.rs](./src/runner/exercise12_1/exercise12_1.rs) | [Exercise12_2.rs](./src/runner/exercise12_2/exercise12_2.rs) |
