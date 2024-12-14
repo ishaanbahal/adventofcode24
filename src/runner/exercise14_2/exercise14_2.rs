@@ -2,8 +2,7 @@ use std::{
     collections::HashSet,
     fs::{self},
     io::{self, Read},
-    thread::sleep,
-    time::{Duration, SystemTime},
+    time::SystemTime,
 };
 
 use regex::Regex;
@@ -35,8 +34,6 @@ impl Robot {
 
 const X_MAX: i32 = 101;
 const Y_MAX: i32 = 103;
-const X_MID: i32 = 50;
-const Y_MID: i32 = 51;
 fn parse_input(fname: &str) -> i64 {
     let parse_start = SystemTime::now();
 
