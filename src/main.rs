@@ -7,13 +7,13 @@ use runner::{
     exercise10_1::exercise10_1, exercise10_2::exercise10_2, exercise11_1::exercise11_1,
     exercise11_2::exercise11_2, exercise12_1::exercise12_1, exercise12_2::exercise12_2,
     exercise13_1::exercise13_1, exercise13_2::exercise13_2, exercise14_1::exercise14_1,
-    exercise14_2::exercise14_2, exercise1_1::exercise1_1, exercise1_2::exercise1_2,
-    exercise2_1::exercise2_1, exercise2_2::exercise2_2, exercise3_1::exercise3_1,
-    exercise3_2::exercise3_2, exercise4_1::exercise4_1, exercise4_2::exercise4_2,
-    exercise5_1::exercise5_1, exercise5_2::exercise5_2, exercise6_1::exercise6_1,
-    exercise6_2::exercise6_2, exercise7_1::exercise7_1, exercise7_2::exercise7_2,
-    exercise8_1::exercise8_1, exercise8_2::exercise8_2, exercise9_1::exercise9_1,
-    exercise9_2::exercise9_2,
+    exercise14_2::exercise14_2, exercise15_1::exercise15_1, exercise15_2::exercise15_2,
+    exercise1_1::exercise1_1, exercise1_2::exercise1_2, exercise2_1::exercise2_1,
+    exercise2_2::exercise2_2, exercise3_1::exercise3_1, exercise3_2::exercise3_2,
+    exercise4_1::exercise4_1, exercise4_2::exercise4_2, exercise5_1::exercise5_1,
+    exercise5_2::exercise5_2, exercise6_1::exercise6_1, exercise6_2::exercise6_2,
+    exercise7_1::exercise7_1, exercise7_2::exercise7_2, exercise8_1::exercise8_1,
+    exercise8_2::exercise8_2, exercise9_1::exercise9_1, exercise9_2::exercise9_2,
 };
 
 fn main() {
@@ -58,6 +58,8 @@ fn main() {
         "13_2" => wrkr = &exercise13_2::Worker {},
         "14_1" => wrkr = &exercise14_1::Worker {},
         "14_2" => wrkr = &exercise14_2::Worker {},
+        "15_1" => wrkr = &exercise15_1::Worker {},
+        "15_2" => wrkr = &exercise15_2::Worker {},
         _ => {}
     }
     let now = SystemTime::now();
