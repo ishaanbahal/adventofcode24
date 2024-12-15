@@ -40,6 +40,7 @@ These are my solutions, with runtimes! :sunglasses:
 | [12](https://adventofcode.com/2024/day/12) | Garden Groups               | 6.08ms  | NA | [Exercise12_1.rs](./src/runner/exercise12_1/exercise12_1.rs) | [Exercise12_2.rs](./src/runner/exercise12_2/exercise12_2.rs) |
 | [13](https://adventofcode.com/2024/day/13) | Claw Contraption               | 60µs  | 62µs | [Exercise13_1.rs](./src/runner/exercise13_1/exercise13_1.rs) | [Exercise13_2.rs](./src/runner/exercise13_2/exercise13_2.rs) |
 | [14](https://adventofcode.com/2024/day/14) | Restroom Redoubt               | 725µs  | manual | [Exercise14_1.rs](./src/runner/exercise14_1/exercise14_1.rs) | [Exercise14_2.rs](./src/runner/exercise14_2/exercise14_2.rs) |
+| [15](https://adventofcode.com/2024/day/15) | Restroom Redoubt               | 4ms  | 5ms | [Exercise15_1.rs](./src/runner/exercise15_1/exercise15_1.rs) | [Exercise15_2.rs](./src/runner/exercise15_2/exercise15_2.rs) |
 
 
 ## Notes

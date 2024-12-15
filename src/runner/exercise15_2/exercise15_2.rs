@@ -126,21 +126,19 @@ fn manage_robot_moves(moves: &Vec<DIRECTION>, map: &mut Vec<Vec<TILE>>) -> i64 {
     //print_map(map);
     for m in moves {
         robot_pos = move_robot(*m, map, robot_pos);
-        println!("Direction: {:?}", m);
-        print_map(map);
         let mut buffer = [0u8; 1];
-        match io::stdin().read_exact(&mut buffer) {
-            Ok(_) => {
-                println!("\x1B[2J");
-                if buffer[0] == b'q' {
-                    break;
-                }
-            }
-            Err(error) => {
-                println!("error: {}", error);
-                break;
-            }
-        }
+        //match io::stdin().read_exact(&mut buffer) {
+        //    Ok(_) => {
+        //        println!("\x1B[2J");
+        //        if buffer[0] == b'q' {
+        //            break;
+        //        }
+        //    }
+        //    Err(error) => {
+        //        println!("error: {}", error);
+        //        break;
+        //    }
+        //}
     }
     get_gps(map)
 }
@@ -199,10 +197,6 @@ fn move_robot(m: DIRECTION, map: &mut Vec<Vec<TILE>>, pos: (usize, usize)) -> (u
     let mut blocks_in_path: Vec<(usize, usize, TILE)> = Vec::new();
     loop {
         let next_positions = get_next_positions(m, start_pos, end_pos);
-        println!(
-            "Start: {:?}, End: {:?}. Direction: {:?}, Next positions: {:?}",
-            start_pos, end_pos, m, next_positions
-        );
         let mut clean_break: bool = true;
         for next_pos in next_positions {
             if map[next_pos.0][next_pos.1] == TILE::WALL {
