@@ -12,6 +12,8 @@ pub mod exercise15_1;
 pub mod exercise15_2;
 pub mod exercise16_1;
 pub mod exercise16_2;
+pub mod exercise17_1;
+pub mod exercise17_2;
 pub mod exercise1_1;
 pub mod exercise1_2;
 pub mod exercise2_1;
