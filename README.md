@@ -43,6 +43,7 @@ These are my solutions, with runtimes! :sunglasses:
 | [15](https://adventofcode.com/2024/day/15) | Restroom Redoubt               | 4ms  | 5ms | [Exercise15_1.rs](./src/runner/exercise15_1/exercise15_1.rs) | [Exercise15_2.rs](./src/runner/exercise15_2/exercise15_2.rs) |
 | [16](https://adventofcode.com/2024/day/16) | Reindeer Maze               | 9ms  | 15s | [Exercise16_1.rs](./src/runner/exercise16_1/exercise16_1.rs) | [Exercise16_2.rs](./src/runner/exercise16_2/exercise16_2.rs) |
 | [17](https://adventofcode.com/2024/day/17) | Chronospatial Computer               | 158µs  | 3min | [Exercise17_1.rs](./src/runner/exercise17_1/exercise17_1.rs) | [Exercise17_2.rs](./src/runner/exercise17_2/exercise17_2.rs) |
+| [18](https://adventofcode.com/2024/day/18) | RAM Run               | 1.5ms  | 688ms | [Exercise18_1.rs](./src/runner/exercise18_1/exercise18_1.rs) | [Exercise18_2.rs](./src/runner/exercise18_2/exercise18_2.rs) |
 
 
 ## Notes
