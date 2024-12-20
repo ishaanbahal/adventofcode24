@@ -1,10 +1,9 @@
 use std::{
-    cmp::{Ordering, Reverse},
+    cmp::Reverse,
     fs::File,
     i64,
     io::{BufRead, BufReader},
-    thread::sleep,
-    time::{Duration, SystemTime},
+    time::SystemTime,
 };
 
 use priority_queue::PriorityQueue;
@@ -60,10 +59,6 @@ fn parse_input(fname: &str) -> i64 {
         parse_start.elapsed().unwrap().as_micros()
     );
     0
-}
-
-fn binary_search_idx(curr_idx: usize) -> usize {
-    (TOTAL_FILE_SIZE - curr_idx) / 2
 }
 
 fn get_next_steps(location: (usize, usize)) -> Vec<(usize, usize)> {
