@@ -45,6 +45,7 @@ These are my solutions, with runtimes! :sunglasses:
 | [17](https://adventofcode.com/2024/day/17) | Chronospatial Computer               | 158µs  | 3min | [Exercise17_1.rs](./src/runner/exercise17_1/exercise17_1.rs) | [Exercise17_2.rs](./src/runner/exercise17_2/exercise17_2.rs) |
 | [18](https://adventofcode.com/2024/day/18) | RAM Run               | 1.5ms  | 688ms | [Exercise18_1.rs](./src/runner/exercise18_1/exercise18_1.rs) | [Exercise18_2.rs](./src/runner/exercise18_2/exercise18_2.rs) |
 | [19](https://adventofcode.com/2024/day/19) | Linen Layout               | 2.1ms  | 13ms | [Exercise19_1.rs](./src/runner/exercise19_1/exercise19_1.rs) | [Exercise19_2.rs](./src/runner/exercise19_2/exercise19_2.rs) |
+| [20](https://adventofcode.com/2024/day/20) | Race Condition               | 441ms  | 588ms | [Exercise20_1.rs](./src/runner/exercise20_1/exercise20_1.rs) | [Exercise20_2.rs](./src/runner/exercise20_2/exercise20_2.rs) |
 
 
 ## Notes
